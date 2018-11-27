@@ -88,27 +88,6 @@ $(function () {
     $("#form").data("bootstrapValidator").resetForm();
     
   });
-
-  //进度条
-
-  //开启进度条
-  $(document).ajaxStart(function () {
-    
-    Nprogress.start();
-    
-  });
-
-  //关闭进度条
-  $(document).ajaxStop(function () {
-    
-    setTimeout(function () {
-      Nprogress.done();
-      
-    },500);
-    
-  });
-
-
-  
   
 });
+
