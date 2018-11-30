@@ -182,24 +182,10 @@ $(function () {
           $('#firTxt').text('请选择一级分类');
 
         }
-        
         // console.log(info);
-        
-        
       }
     });
 
-
-    
   })
-
-
-
-
-
-
-
-
-
 
 })
