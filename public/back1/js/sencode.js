@@ -175,7 +175,7 @@ $(function () {
           $("#form").data('bootstrapValidator').resetForm(true);
 
           //重置图片
-          $('#imgBox').attr('src', '/category/addSecondCategoryPic');
+          $('#imgBox').attr('src', './images/none.png');
 
 
           // 重置一级分类按钮

@@ -73,6 +73,7 @@ a:active{
 /*设置侧边栏的用户*/
 .lt_aside .user{
   padding-top: 30px;
+  display: block;
 }
 
 .lt_aside .user img{
