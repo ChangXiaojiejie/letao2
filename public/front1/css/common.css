@@ -67,6 +67,15 @@ ul{
 
 
 /* 设置内容区域 */
+.lt_content{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #0f0;
+}
+
+
+
 
 /* 设置尾部 */
 
@@ -91,4 +100,11 @@ ul{
   color: #fff;
   margin: 0;
   padding: 0;
+}
+.lt_footer a.active{
+  color: orange;
+}
+
+.lt_footer a.active p{
+  color: orange;
 }
