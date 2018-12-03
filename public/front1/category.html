@@ -38,27 +38,8 @@
         <div class="mui-scroll-wrapper">
           <div class="mui-scroll">
             <ul>
-              <li>
-                <a href="javascript:;">运动馆</a>
-              </li>
-              <li>
-                <a class="active" href="javascript:;">运动馆</a>
-              </li>
-              <li>
-                <a href="javascript:;">运动馆</a>
-              </li>
-              <li>
-                <a href="javascript:;">运动馆</a>
-              </li>
-              <li>
-                <a href="javascript:;">运动馆</a>
-              </li>
-              <li>
-                <a href="javascript:;">运动馆</a>
-              </li>
-              <li>
-                <a href="javascript:;">运动馆</a>
-              </li>
+            <!-- 玩个坑 -->
+        
             </ul>
           </div>
         </div>
@@ -68,42 +49,7 @@
           <div class="mui-scroll">
 
             <ul>
-              <li>
-                <a href="javascript:;">
-                  <img src="./images/brand1.png" alt="">
-                  <p>耐克</p>
-                </a>
-              </li>
-              <li>
-                <a href="javascript:;">
-                  <img src="./images/brand1.png" alt="">
-                  <p>耐克</p>
-                </a>
-              </li>
-              <li>
-                <a href="javascript:;">
-                  <img src="./images/brand1.png" alt="">
-                  <p>耐克</p>
-                </a>
-              </li>
-              <li>
-                <a href="javascript:;">
-                  <img src="./images/brand1.png" alt="">
-                  <p>耐克</p>
-                </a>
-              </li>
-              <li>
-                <a href="javascript:;">
-                  <img src="./images/brand1.png" alt="">
-                  <p>耐克</p>
-                </a>
-              </li>
-              <li>
-                <a href="javascript:;">
-                  <img src="./images/brand1.png" alt="">
-                  <p>耐克</p>
-                </a>
-              </li>
+              <!-- 玩个坑 -->
             </ul>
 
 
@@ -149,6 +95,39 @@
     </div>
 
   </div>
+
+
+  <!-- 一级分类渲染模板 -->
+  <script type="text/html" id="firTpl">
+
+    {{each rows v i}}
+
+      <li>
+        <a data-id="{{v.id}}" href="javascript:;" class="{{i===0?'active':''}}">{{v.categoryName}}</a>
+      </li>
+
+    {{/each}}
+  
+  
+  
+  </script>
+
+  <!-- 二级分类渲染页面 -->
+  <script type="text/html" id="senTpl">
+    {{if rows.length ===0 }}
+      <p>没有更多的数据了</p>
+    {{else}}
+    {{each rows v i}}
+      <li>
+        <a href="javascript:;">
+          <img src="{{v.brandLogo}}" alt="">
+          <p>{{v.brandName}}</p>
+        </a>
+      </li>
+    {{/each}}
+
+    {{/if}}
+  </script>
 
   <script src="./lib/mui/js/mui.js"></script>
   <script src="./lib/zepto/zepto.min.js"></script>
