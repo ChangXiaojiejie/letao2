@@ -143,6 +143,73 @@ img{
   text-decoration: line-through;
 }
 
+/*****搜索区域********/
+.search_top{
+  padding: 10px;
+  position: relative;
+ 
+}
+
+.search_top .search_input{
+  height: 34px;
+  line-height: 34px;
+  font-size: 12px;
+  border-radius: 5px;
+  border: 1px solid #069;
+  margin: 0;
+}
+.search_top .search_btn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 0 5px 5px 0;
+}
+
+.title{
+  
+  height: 30px;
+  line-height: 30px;
+}
+
+.search_body {
+  font-size: 12px;
+  color: #666;
+  padding: 10px;
+}
+
+.search_body .content{
+ 
+}
+.search_body .content ul{
+  border: 1px dashed red;
+}
+
+.search_body .content li{
+  height: 30px;
+  line-height: 30px;
+  border-bottom:1px dashed red; 
+  padding: 0 10px;
+}
+.search_body .content li i{
+  line-height: 30px;
+}
+
+
+.search_body .content li:last-child{
+  border-bottom: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
